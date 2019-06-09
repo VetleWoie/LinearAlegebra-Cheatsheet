@@ -81,4 +81,27 @@ La $A$ være en $n\times m$ matrise. Følgende utsagn er ekvivalent:
     \item $det(A)\neq 0$
     \item $\vector{0}$ er ikke en egenvektor til $A$
 \end{enumerate}
+\section{Determinant:}
+\subsection*{Definisjon:}
+Determinanten er en funksjon:\\
+$det:\{n\times n matrise\}\rightarrow \real$\\
+Som oppfyller følgende atributter:
+\begin{enumerate}[topsep=0pt,itemsep=0pt, partopsep=0pt]
+    \item Å legge til en multippel av en rad til en annen rad, endrer ikke determinanten
+    \item Skalere en av radene til $A$ med en skalar $c$ multipliserer determinanten med $c$
+    \item Bytte to rader av en matrise, multipliserer determinanten med $-1$
+    \item Determinanten til identitetsmatrisen er 1
+\end{enumerate}
+\subsection*{Atributter til determinanten:}
+\begin{itemize}[topsep=0pt,itemsep=0pt, partopsep=0pt]
+    \item Hvis $A$ har en 0 kollone eller 0 rad så er determinanten 0
+    \item Hvis $A$ er triangulær, så er determinanten produktet av elementene langs diagonalen
+    \item $det(A^{-1}=\frac{1}{\det(A)})$
+    \item $det(AB) = det(A)det(B)$
+    \item $det(A^T)=det(A)$
+    \item Hvis en matrise $A$ har to like rader, så er $det(A)=0$
+    \item Determinanten er volumet til paralellepipeden spent ut av kolonnene til en matrise
+\end{itemize}
+
+
 \end{document}
