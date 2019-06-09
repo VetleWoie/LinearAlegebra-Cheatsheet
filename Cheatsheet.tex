@@ -1,0 +1,62 @@
+\documentclass[12pt,a4paper,twocolumn,twoside]{article}
+\usepackage[a4paper,total={20cm, 28.5cm},headsep=0.3cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{sectsty}
+\usepackage{titlesec}
+\usepackage{amsfonts}
+\usepackage{enumitem}
+\usepackage{amsmath}
+
+\titleformat{\subsection}{\small\bfseries}{\thesection}{1em}{}
+\titleformat{\subsubsection}{\footnotesize\bfseries}{\thesection}{1em}{}
+\sectionfont{\fontsize{10}{8}\selectfont}
+
+\titlespacing*{\section}{0pt}{0.2cm}{0.1cm}
+\titlespacing*{\subsection}{0pt}{0.2cm}{0.1cm}
+\titlespacing*{\subsubsection}{0pt}{0.2cm}{0.1cm}
+
+\setlength{\columnseprule}{1pt}
+
+
+\def\abs#1{\lvert #1 \rvert}
+\def\real{\mathbb{R}}
+\def\suminfty#1#2{\sum_{n=#1}^\infty #2}
+\def\der#1#2#3{\frac{d #1}{d #2}\left( #3 \right)}
+\def\parder#1#2#3{\frac{\partial #1}{\partial #2}\left( #3 \right)}
+\def\forvar#1#2#3{E(#1)=#2 \quad Var(#1)=#3}
+\def\rref{\stackrel{G-J}{\longrightarrow}}
+\def\vector#1{\bold{\stackrel{\rightarrow}{#1}}}
+
+\begin{document}
+%
+%Subspace
+%
+\section*{Subspace}
+Et subspace av $\real^n$ er et subset V av $\real^n$, som oppfyller:
+\begin{enumerate}[topsep=0pt,itemsep=0pt, partopsep=0pt]
+    \item Nonemptiness: $\vector{0}\in V$
+    \item Closure under additiion: $\vector{u},\vector{k}\in V \Leftrightarrow \vector{u}+\vector{k}\in V$
+    \item Closure under multiplication: $\vector{u}\in V \Leftrightarrow c\vector{u}\in V$
+\end{enumerate}
+Alle subspaces er et span og alle span er et subspace
+\subsection*{Finne ut om et subset er et subspace}
+\begin{itemize}[topsep=0pt,itemsep=0pt, partopsep=0pt]
+    \item Er subsettet et span? Kan det skrives som et span?
+    \item Kan det bli skrevet som et columnspace til en matrise?
+    \item Kan det bli skrevet som nullspacet til en matrise
+    \item Er det hele $\real^n$ eller $\{\vector{0}\}$
+    \item Kan det skrives som en type subspace?\\
+    \begin{itemize}[topsep=0pt,itemsep=0pt, partopsep=0pt]
+        \item Eigenspace
+        \item Ortogonal complement etc\dots
+    \end{itemize}
+    \item Kan en bekrefte de tre kravene til et subspaces er oppfylt?
+\end{itemize}
+\section*{Basis:}
+La V være et subspace av $\real^n$. En basis til V vil da være et sett av
+vektorer $\{\vector{v_1},\vector{v_2},\dots\vector{v_n}\}$ slik at:
+\begin{enumerate}[topsep=0pt,itemsep=0pt, partopsep=0pt]
+    \item $V = Span\{\vector{v_1},\vector{v_2},\dots\vector{v_n}\}$
+    \item $\{\vector{v_1},\vector{v_2},\dots\vector{v_n}\}$ Er lineært uavhengig.
+\end{enumerate}
+\end{document}
