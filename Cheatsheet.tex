@@ -61,7 +61,7 @@ vektorer $\{\vector{v_1},\vector{v_2},\dots\vector{v_n}\}$ slik at:
 \end{enumerate}
 \section*{Rank Theorem:}
 \begin{itemize}[topsep=0pt,itemsep=0pt, partopsep=0pt]
-    \item $Rank(A) = Dim(Col(A))$
+    \item $Rank(A) = Dim(Col(A)) = Dim(Row(A))$
     \item $Nullity(A) = Dim(Null(A))$
 \end{itemize}
 Hvis $A$ er en $m \times n$ matrise, Da:\\ $Rank(A)+Nullity(A)=n$
@@ -81,7 +81,7 @@ La $A$ være en $n\times m$ matrise. Følgende utsagn er ekvivalent:
     \item $det(A)\neq 0$
     \item $\vector{0}$ er ikke en egenvektor til $A$
 \end{enumerate}
-\section{Determinant:}
+\section*{Determinant:}
 \subsection*{Definisjon:}
 Determinanten er en funksjon:\\
 $det:\{n\times n matrise\}\rightarrow \real$\\
@@ -102,6 +102,37 @@ Som oppfyller følgende atributter:
     \item Hvis en matrise $A$ har to like rader, så er $det(A)=0$
     \item Determinanten er volumet til paralellepipeden spent ut av kolonnene til en matrise
 \end{itemize}
+\section*{Egenvektor og egenverdier:}
+La $A$ være en $n\times n$ matrise:
+\begin{enumerate}[topsep=0pt,itemsep=0pt, partopsep=0pt]
+    \item En egenvektor av $A$ er en ikkenull vektor $\vector{v}$ i $\real^n$
+            slik at $A\vector{v}=\lambda \vector{v}$
+    \item En egenverdi av A er en skalar $\lambda$, slik at likningen $A\vector{v}=\lambda\vector{v}$, har en ikketriviell løsning.
+\end{enumerate}
+Obs! Egenvektor er ved definisjon ikkenull, men egenverdier kan være 0
+\subsection*{Det karakteristiske polynomet:}
+\subsubsection*{Definisjon:}
+Karakteristiske polynomet til en matrise $A$ er funksjonen:\\
+$f(\lambda)=det(A-\lambda I_n)$
+\subsubsection*{Theorem:}
+La A være en kvadratisk matrise, og la $f(\lambda)=det(A-\lambda I_n)$ være dens karakteristiske polynom.
+Da er $\lambda$ en egenverdi til A hviss $f(\lambda) = 0$
+
+\section*{Similære matriser:}
+\subsection*{Definisjon:}
+To kvadratiske matriser $A$ og $B$ er similære, hvis det finnes en ivertibel matrise $C$ slik at $A=CBC^{-1}$
+\subsection*{Atributter til similære matriser:}
+\begin{itemize}[topsep=0pt,itemsep=0pt, partopsep=0pt]
+    \item Refleksivitet: A er similær med seg selv
+    \item Symmetri: A er similær med B $\Leftrightarrow$ B er similær med A
+    \item Transitivitet: A er similær med B, og B er similær med C, da er A similær med C
+    \item $A=CBC^{-1}\rightarrow A^n=CB^nC^{-1}$
+    \item $A=CBc^{-1}$: $\vector{v_1}$ er en egenvektor til A $\Rightarrow$ $C^{-1}\vector{v_1}$ er en egenvektor til B
+    \item $A=CBc^{-1}$: $\vector{v_2}$ er en egenvektor til B $\Rightarrow$ $C\vector{v_2}$ er en egenvektor til A
+\end{itemize}
+
+\section*{Diagonalisering:}
+
 
 
 \end{document}
