@@ -45,7 +45,7 @@ Alle subspaces er et span og alle span er et subspace
     \item Kan det bli skrevet som et columnspace til en matrise?
     \item Kan det bli skrevet som nullspacet til en matrise
     \item Er det hele $\real^n$ eller $\{\vector{0}\}$
-    \item Kan det skrives som en type subspace?\\
+    \item Kan det skrives som en type subspace?
     \begin{itemize}[topsep=0pt,itemsep=0pt, partopsep=0pt]
         \item Eigenspace
         \item Ortogonal complement etc\dots
@@ -66,7 +66,7 @@ vektorer $\{\vector{v_1},\vector{v_2},\dots\vector{v_n}\}$ slik at:
 \end{itemize}
 Hvis $A$ er en $m \times n$ matrise, Da:\\ $Rank(A)+Nullity(A)=n$
 \section*{Invertibel matrise teorem:}
-La $A$ være en $n\times m$ matrise. Følgende utsagn er ekvivalent:
+La $A$ være en kvadratisk matrise. Følgende utsagn er ekvivalent:
 \begin{enumerate}[topsep=0pt,itemsep=0pt, partopsep=0pt]
     \item $A$ er invertibel
     \item Redusert trappeform til $A$ er identitetsmatrisen
@@ -127,8 +127,8 @@ To kvadratiske matriser $A$ og $B$ er similære, hvis det finnes en ivertibel ma
     \item Symmetri: A er similær med B $\Leftrightarrow$ B er similær med A
     \item Transitivitet: A er similær med B, og B er similær med C, da er A similær med C
     \item $A=CBC^{-1}\rightarrow A^n=CB^nC^{-1}$
-    \item $A=CBc^{-1}$: $\vector{v_1}$ er en egenvektor til A $\Rightarrow$ $C^{-1}\vector{v_1}$ er en egenvektor til B
-    \item $A=CBc^{-1}$: $\vector{v_2}$ er en egenvektor til B $\Rightarrow$ $C\vector{v_2}$ er en egenvektor til A
+    \item $A=CBC^{-1}$: $\vector{v_1}$ er en egenvektor til A $\Rightarrow$ $C^{-1}\vector{v_1}$ er en egenvektor til B
+    \item $A=CBC^{-1}$: $\vector{v_2}$ er en egenvektor til B $\Rightarrow$ $C\vector{v_2}$ er en egenvektor til A
 \end{itemize}
 
 \section*{Diagonalisering:}
@@ -145,5 +145,10 @@ $C=[v_1,v_2,\dots,v_n] \; D=\begin{bmatrix}
 \end{bmatrix}$\\
 Hvor $v_1,v_2\dots v_n$ og $\lambda_1,\lambda_2, \dots,\lambda_n$ er egenvektorene/verdiene til A
 
+\section*{Ortogonal kompliment:}
+La $V$ være et underrom i $\real^n$, da er det ortogonale komplimentet til $V$, alle vektorer som står ortogonalt på $V$\\
+$V^\perp=\{\vec{x}|x\cdot\vec{y} = 0, y\in V\}$\\
+OBS! Må ikke forveksles med ortogonal basis!
+\section*{Ortogonal basis:}
 
 \end{document}
