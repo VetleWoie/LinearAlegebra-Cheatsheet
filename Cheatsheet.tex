@@ -153,6 +153,37 @@ OBS! Må ikke forveksles med ortogonal basis!
 \section*{Ortogonal basis:}
 En ortogonal basis, er en basis $\{\vec{v_1},\vec{v_2},\dots,\vec{v_n}\}$ for et subspace $V$, der $\vec{v_i}\cdot\vec{v_j}=0$.
 Altså alle vektorene i basisen, er ortogonale. 
+
 \subsection*{Ortonormal basis:}
 I en ortonormal basis er alle vektorene av lengde 1.
+
+\subsection*{Gram-Schmidt:}
+Brukes for å finne ortogonal basis til et underrom:\\
+Gitt en basis $\{\vec{v_1},\vec{v_2},\dots,\vec{v_m}\}$ for et underrom $V \subseteq \real^n$. Er en ortogonal basis vektorene $\{\vec{u_1},\vec{u_2},\dots,\vec{u_n}\}$ hvor:
+\begin{enumerate}[topsep=0pt,itemsep=0pt, partopsep=0pt]
+    \item $\vec{u_1}=\vec{v_1}$
+    \item $\vec{u_2}=\vec{v_2}- Proj_{\vec{u_1}}\vec{v_2}$
+    \item $\vec{u_3}=\vec{v_3}- Proj_{\vec{u_1}}\vec{v_3}-Proj_{\vec{u_2}}\vec{v_3}$
+    \item $\vec{u_m}=\vec{v_m}- \sum_{i=1}^m Proj_{\vec{u_m}}\vec{v_m}$
+\end{enumerate}
+
+\section*{Ortogonal diagonalisering:}
+En matrise A er ortogonal diagonaliserbar hviss:
+\begin{itemize}[topsep=0pt,itemsep=0pt, partopsep=0pt]
+    \item A er symmetrisk om diagonalen.
+    \item $A=PDP^{-1}$, hvor P er en ortogonal matrise.
+    \begin{itemize}
+        \item En ortogonal matrise er en matrise, hvor kolonnene er ortogonale enhetsvektorer
+        \item $Q^T=Q^{-1}\Leftrightarrow Q^TQ=I$
+    \end{itemize}
+\end{itemize}
+
+\section*{Komplekse Matriser:}
+\begin{itemize}[topsep=0pt,itemsep=0pt, partopsep=0pt]
+    \item En kompleks matrise A er Hermitsk hviss $A=A^T$
+    \item En komplex matrise A er unitær hviss $A\cdot A=I$
+    \begin{itemize}[topsep=0pt,itemsep=0pt, partopsep=0pt]
+        \item Kolonnene til A er en ortonormal basis til $\mathbb{C}$ 
+    \end{itemize}
+\end{itemize}
 \end{document}
